@@ -40,7 +40,7 @@ function giphyPull(buttonClicked){
 //ajax call
 var tag=buttonClicked;
 var offset=Math.floor(Math.random()*15);
-var apiURL="https://api.giphy.com/v1/gifs/search?api_key=2eab242fa3254211aabafc419aa08207&q=" +tag + "&limit=10&offset=" +offset+ "&rating=R&lang=en";
+var apiURL="https://api.giphy.com/v1/gifs/search?api_key=2eab242fa3254211aabafc419aa08207&q=" +tag + "&limit=9&offset=" +offset+ "&rating=R&lang=en";
 var rating;
 var alt;
 
@@ -64,7 +64,7 @@ for (var i=0;i<giphyObject.length;i++){
 	newImage.attr("data-state", "still");
 	newImage.attr("data-still", stillImg);
 	newImage.attr("data-animate",animateImg);
-	var newCol=$("<div class='col-xs-3'>");
+	var newCol=$("<div class='col-xs-4'>");
 	var newP=$("<p>");
 	newP.text("Rating: " + rating);
 	newCol.prepend(newP);
