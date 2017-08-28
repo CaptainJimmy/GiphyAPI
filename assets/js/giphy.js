@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 //the one necessary global variable
 
-var buttonArray=["helicopter","dog","parrot","kitten","skeletons","PCU","the rock","ball python"];
+var buttonArray=["helicopter","dog","parrot","kitten","skeletons","PCU","the rock","snakes","jeremy pivens"];
 
 
 $("body").on("click",".button-panel",function(){
