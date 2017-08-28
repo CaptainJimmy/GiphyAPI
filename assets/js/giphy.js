@@ -39,7 +39,7 @@ $("body").on("click",".gif", function(){
 function giphyPull(buttonClicked){
 //ajax call
 var tag=buttonClicked;
-var offset=Math.floor(Math.random()*100);
+var offset=Math.floor(Math.random()*15);
 var apiURL="https://api.giphy.com/v1/gifs/search?api_key=2eab242fa3254211aabafc419aa08207&q=" +tag + "&limit=10&offset=" +offset+ "&rating=PG-13&lang=en";
 var rating;
 var alt;
